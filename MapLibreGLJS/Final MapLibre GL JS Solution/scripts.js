@@ -43,15 +43,15 @@ const marker = new maplibregl.Marker().setLngLat(philly).addTo(map);
 
 ////Feature Layer
 map.once("load", () => {
-  map.addSource("zipcodes", {
+  map.addSource("police-districts", {
     type: "geojson",
     data: "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/Boundaries_District/FeatureServer/0/query?f=geojson&where=1=1",
   });
 
   map.addLayer({
-    id: "zipcodes-polygons",
+    id: "police-districts-polygon",
     type: "fill",
-    source: "zipcodes",
+    source: "police-districts",
     paint: {
       "fill-color": "hsl(200, 80%, 50%)",
       "fill-opacity": 0.5,
