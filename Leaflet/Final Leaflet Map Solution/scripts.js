@@ -9,7 +9,7 @@ const indVisCenter = [39.95122, -75.1499];
 
 //hint: Find latitude and longitude of a place with this url, replacing the ADDRESS/PLACE: https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?f=pjson&outFields=ADDRESS/PLACE
 const arcgisKey =
-  "AAPK585d954ab7a44b2f98e8a4406019115bD-VrVSpxg15QCIhyJl-bZSceC_H-KCvbR5VkCvkDaFrkS6mCjdmbG96ZYAK2NVlq";
+  "your_key";
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
