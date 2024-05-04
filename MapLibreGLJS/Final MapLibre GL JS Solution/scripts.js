@@ -1,7 +1,7 @@
 const map = new maplibregl.Map({
   container: "map", // container id
   style:
-    "https://api.jawg.io/styles/jawg-sunny.json?access-token=f6poGAp1T61DhCzmnI7eedJGHaoWPQ6vDtp7lTY3o8wNucLc2hsjB7J4NdaRxons", // style URL
+    "https://api.jawg.io/styles/jawg-sunny.json?access-token=your_key", // style URL
   center: [-75.14671922, 39.94877326], // starting position [lng, lat]
   zoom: 10, // starting zoom
 });
@@ -72,7 +72,7 @@ map.on("click", async (e) => {
       },
     ],
     authentication: arcgisRest.ApiKeyManager.fromKey(
-      "AAPK585d954ab7a44b2f98e8a4406019115bD-VrVSpxg15QCIhyJl-bZSceC_H-KCvbR5VkCvkDaFrkS6mCjdmbG96ZYAK2NVlq"
+      "your_key"
     ),
   });
 
