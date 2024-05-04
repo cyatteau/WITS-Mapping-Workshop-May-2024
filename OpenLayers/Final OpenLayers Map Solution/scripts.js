@@ -121,11 +121,11 @@ new ol.source.TileWMS({
 // });
 
 //ArcGIS Custom Vector Tile Map
-// const basemapURL = `https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/items/6976148c11bd497d8624206f9ee03e30?token=AAPK585d954ab7a44b2f98e8a4406019115bD-VrVSpxg15QCIhyJl-bZSceC_H-KCvbR5VkCvkDaFrkS6mCjdmbG96ZYAK2NVlq`;
+// const basemapURL = `https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/items/6976148c11bd497d8624206f9ee03e30?token=your_key`;
 // olms.apply(map, basemapURL)
 
 //Layering Feature Layers on top
-const basemapURL = `https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/items/6976148c11bd497d8624206f9ee03e30?token=AAPK585d954ab7a44b2f98e8a4406019115bD-VrVSpxg15QCIhyJl-bZSceC_H-KCvbR5VkCvkDaFrkS6mCjdmbG96ZYAK2NVlq`;
+const basemapURL = `https://basemapstyles-api.arcgis.com/arcgis/rest/services/styles/v2/styles/items/6976148c11bd497d8624206f9ee03e30?token=your_key`;
 olms.apply(map, basemapURL).then(() => {
   ////Philadelphia Schools
   const schoolsSource = new ol.source.Vector({
